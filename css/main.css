@@ -1,0 +1,9 @@
+/*Navigation bar*/
+
+li{	
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+

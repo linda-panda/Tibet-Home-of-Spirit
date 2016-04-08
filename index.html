@@ -1,70 +1,106 @@
     <!DOCTYPE html>
-        <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
-            <title>Home Page</title>
-            <!-- compiled and minified CSS -->  
-            <link rel="stylesheet" herf="css/boostrap.min.css">
-            <link rel="stylesheet" herf="css/boostrap-theme.min.css"> 
-            <link rel="stylesheet" herf="css/main.css">
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        </head>        
-            <hr>
+        <title>Home Page</title>
+        <!-- compiled and minified CSS -->  
+        <link rel="stylesheet" href="css/boostrap.min.css">
+        <link rel="stylesheet" href="css/boostrap-theme.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-        <body>
-            <h1><b> The world is your classroom </b></h1>
-                
-                    <div id="slidesshow" class="carousel slide">
-                        <ol class="carousel-indicators">
-                            <li data-target ="slidesshow" data-slide-to ="0" class="active"></li>
-                            <li data-target ="slidesshow" data-slide-to ="1"></li>
-                            <li data-target ="slidesshow" data-slide-to ="2"></li>
-                            <li data-target ="slidesshow" data-slide-to ="3"></li>
-                       </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="image/homepage1.jpg" alt="mountain" class="img-responsive">
-                            <div class="carousel-caption">
-                            <h3>Montain</h3>
-                            </div>
-                            
-                        </div>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+
+    </head>        
+
+
+    <body>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!--logo-->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://www.wildchina.com/education-tours">TIBETHOME</a>
+                </div>
+
+                <!--Menu-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria="true"></span> Home</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-user" aria="true"></span> About Us </a></li>
+                    <li><a href="">Tours</a></li>
+                    <li><a href="">Accomodation</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">What we offer<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Route 1</a></li>
+                            <li><a href="">Route 2</a></li>
+                            <li><a href="">Route 3</a></li>
+                            <li><a href="">Route 4</a></li>
+                        </ul>
                         
-                        <div class="item">
-                            <img src="image/homepage2.jpg" alt="beach" class="img-responsive">        
-                            <div class="carousel-caption">
-                            <h3>Beach</h3>            
-                            </div>
-                        </div>
-                        
-                        <div class="item">
-                            <img src="image/homepage3.jpg" alt="camel" class="img-responsive">        
-                            <div class="carousel-caption">
-                            <h3>Camel</h3>   
-                            </div>
-                        </div>
-                                          
-                    
-                    </div>
-                        
-                        <a class ="carousel-control left" herf="#slidesshow" data-slide ="prev">
-                            <span class="icon-prev"></span>
-                        
-                        </a>
-                        
-                         <a class ="carousel-control right" herf="#slidesshow" data-slide ="next">
-                            <span class="icon-next"></span>
-                        
-                        </a>
-              </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Contact</a></li>                    
+                </ul>                              
+            </div>
+        </div>
+    </nav>
 
-                <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        </body>
+    <!--Slidesshow-->
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+            
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="image/homepage1.jpg" alt="xxx" class ="img-responsive">
+                <div class="carousel-caption">
+                    <h4>Home of Spirit</h4>
+                </div>
+            </div>
 
-        <footer>
+            <div class="item">
+                <img src="image/homepage2.jpg" alt="xxx" class ="img-responsive">
+                <div class="carousel-caption">
+                    <h4>Home of Spirit</h4>
+                </div>
+            </div>
 
-        </footer>
+            <div class="item">
+                <img src="image/homepage3.jpg" alt="xxx" class ="img-responsive">
+                <div class="carousel-caption">
+                    <h4>Home of Spirit</h4>
+                </div>
+            </div>
+
+            
+        </div>
+        <a class="carousel-control left" href="#mycarousel" data-slide ="prev"><span class="icon-prev"></span></a>
+        <a class="carousel-control right" href="#mycarousel" data-slide ="next"><span class="icon-next"></span></a>
+    </div>
 
 
-    </html>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+<footer>
+
+</footer>
+
+
+</html>
