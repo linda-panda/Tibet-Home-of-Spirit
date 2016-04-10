@@ -7,8 +7,6 @@
 
         <title>Home Page</title>
         <!-- compiled and minified CSS -->  
-        <link rel="stylesheet" href="css/boostrap.min.css">
-        <link rel="stylesheet" href="css/boostrap-theme.min.css"> 
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -18,6 +16,24 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+        <!-- Latest compiled and minified CSS  from https://silviomoreto.github.io/bootstrap-select/-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+        <!-- Latest compiled and minified JavaScript from https://silviomoreto.github.io/bootstrap-select/-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+        <!-- (Optional) Latest compiled and minified JavaScript translation files from https://silviomoreto.github.io/bootstrap-select/-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+
 
     </head>        
 
@@ -43,8 +59,7 @@
                             <li><a href="">Route 2</a></li>
                             <li><a href="">Route 3</a></li>
                             <li><a href="">Route 4</a></li>
-                        </ul>
-                        
+                        </ul>                      
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -52,55 +67,72 @@
                     <li><a href="">Contact</a></li>                    
                 </ul>                              
             </div>
+        </nav>
+
+        <!--Slidesshow-->
+
+        <div class="container-fluid">
+            <form class="well form-search" method="get">
+                <label>Find a Journey</label>
+                <!--search function for user to find a trip-->
+                <select class="selectpicker" title="Choose a Destination">
+                    <option value="Beijing">Beijing</option>
+                    <option value="Shanghai">Shanghai</option>                  
+                </select>
+                <select class="selectpicker" title="Duration">
+                    <option value="Beijing">Beijing</option>
+                    <option value="Shanghai">Shanghai</option>                  
+                </select>
+                <select class="selectpicker" title="Budget">
+                    <option value="Beijing">Beijing</option>
+                    <option value="Shanghai">Shanghai</option>                  
+                </select>
+                
+                <button class="btn btn-info " type="submit">Search</button>
+            </form>
         </div>
-    </nav>
 
-    <!--Slidesshow-->
-    <div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#mycarousel" data-slide-to="1"></li>
-            <li data-target="#mycarousel" data-slide-to="2"></li>
-            
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="image/homepage1.jpg" alt="xxx" class ="img-responsive">
-                <div class="carousel-caption">
-                    <h4>Home of Spirit</h4>
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="image/homepage1.jpg" alt="xxx" class ="img-responsive">
+                    <div class="carousel-caption">
+                        <h4>Home of Spirit</h4>
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <img src="image/homepage2.jpg" alt="xxx" class ="img-responsive">
-                <div class="carousel-caption">
-                    <h4>Home of Spirit</h4>
+                <div class="item">
+                    <img src="image/homepage2.jpg" alt="xxx" class ="img-responsive">
+                    <div class="carousel-caption">
+                        <h4>Home of Spirit</h4>
+                    </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <img src="image/homepage3.jpg" alt="xxx" class ="img-responsive">
-                <div class="carousel-caption">
-                    <h4>Home of Spirit</h4>
+                <div class="item">
+                    <img src="image/homepage3.jpg" alt="xxx" class ="img-responsive">
+                    <div class="carousel-caption">
+                        <h4>Home of Spirit</h4>
+                    </div>
                 </div>
-            </div>
 
-            
+
+            </div>
+            <a class="carousel-control left" href="#mycarousel" data-slide ="prev"><span class="icon-prev"></span></a>
+            <a class="carousel-control right" href="#mycarousel" data-slide ="next"><span class="icon-next"></span></a>
         </div>
-        <a class="carousel-control left" href="#mycarousel" data-slide ="prev"><span class="icon-prev"></span></a>
-        <a class="carousel-control right" href="#mycarousel" data-slide ="next"><span class="icon-next"></span></a>
-    </div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-</body>
 
-<footer>
+    </body>
 
-</footer>
+    <footer>
+
+    </footer>
 
 
-</html>
+    </html>
