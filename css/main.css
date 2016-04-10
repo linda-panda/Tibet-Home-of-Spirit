@@ -1,5 +1,6 @@
 /*Navigation bar*/
 
+
 li{	
 	display: inline;
 	list-style-type: none;
@@ -13,4 +14,27 @@ li{
 	background: transparent;	
 }
 
+.selectpicker{
+	background: red;
+}
+
+/* More information button on home page styling*/
+.moreInfo-btn{
+	background: #2B2B2B;
+	opacity: 0.75;
+	border-radius: 5px;
+	width: 200px;
+	padding: 8px;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.moreInfo-btn:hover,
+.moreInfo-btn:active {
+	background-color: #fff;
+	color: #000;
+}
 
