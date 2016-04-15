@@ -4,32 +4,89 @@
 li{	
 	display: inline;
 	list-style-type: none;
-	padding-right: 20px;
+	padding-right: 25px;
 }
 
-/*--search form on home page--*/
-.searchForm{	
-	background: red;
-	position: relative;
-	background: transparent;	
+
+/*Navigation bar styling*/
+.navbar-inverse{
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+
 }
 
-.selectpicker{
-	background: red;
+.navbar-header{
+
+	height:50px;
+}
+
+.nav{
+	padding:25px 10px;
+}
+
+.navbar-brand>img {
+	max-height: 70px%;
+	height: 70px;
+	width: auto;
+	margin: 0 auto;
+	/* probably not needed anymore, but doesn't hurt */
+	-o-object-fit: contain;
+	object-fit: contain; 
+
+}
+
+.nav-font{
+	font-size: 16px;
+
+}
+
+
+
+#find-a-journey{
+	padding: 12px 0px 12px 0px;
+	margin: 0 auto;
+	width: 78% !important;
+	height:60px;
+	border-radius: 5px;
+	box-shadow: 0px 5px 8px #080808;
+	border-color: #333;
+	border-style: shadow;
+	background-color: #8C0000; 
+	margin-bottom: 20px;
+}
+
+.journeyFinder{
+	display: inline;
+}
+
+/*update the inline size of options   */
+.dropdown-menu{
+	line-height: 1em;
+}
+
+/*carousel*/
+
+.carousel-caption {	
+	position: center;
+	top:40px;	
+	text-align:center;
+}
+
+.item .row img {
+	width:100%;
 }
 
 /* More information button on home page styling*/
 .moreInfo-btn{
-	background: #2B2B2B;
-	opacity: 0.75;
+	background: #8C0000;
+	opacity: 0.70;
 	border-radius: 5px;
 	width: 200px;
-	padding: 8px;
-	color: #fff;
+	height:60px;
+	padding-top: 50px
 	border: 1px solid #fff;
 	text-align: center;
 	text-decoration: none;
-
 }
 
 .moreInfo-btn:hover,
@@ -37,4 +94,27 @@ li{
 	background-color: #fff;
 	color: #000;
 }
+
+
+
+
+/*footer stlying*/
+.panel-footer{
+	font-size: 14px;
+
+}
+
+
+******************************************************
+/*what we offer - routes and treks list page*/
+
+.routeList{
+	display:inline-block;
+	display:inline;
+	margin-left: auto; 
+	margin-right: auto;
+
+}
+
+
 
