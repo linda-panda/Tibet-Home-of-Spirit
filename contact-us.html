@@ -66,7 +66,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> About Us<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">Our Team</a></li>
+                            <li><a href="our-team.html">Our Team</a></li>
                             <li><a href="">Our Story</a></li>
                             <li><a href="">Our Commitment</a></li>
                             <li><a href="">Our Mission</a></li>
@@ -74,7 +74,7 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Useful Tips<span class="caret"></span></a>
+                        <a href="useful-tips" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Useful Tips<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="useful-tips.html">Time difference</a></li>
                             <li><a href="">Weather Tips</a></li>
@@ -102,94 +102,76 @@
             </div>
         </nav>
 
-        <!--Slidesshow-->
+
         <div class="container">
-            <section id="find-a-journey" >
-                <!--search function for user to find a trip-->
-                <div class="col-sm-3 pull-3 push-9 col-journeyFinder">
-                    <select  class="selectpicker" title="Choose a Destination">
-                        <option value="Beijing">Beijing</option>
-                        <option value="Shanghai">Shanghai</option>                  
-                    </select>
+            <form class="well form" role="form">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h3>Find Us here</h3>
+                    </div>
                 </div>
-                <div class="col-sm-3 push-6 journeyFinder">
-                    <select class="selectpicker" title="Duration">
-                        <option value="Beijing">1-7 days </option>
-                        <option value="Shanghai">8-15 days</option>  
-                        <option value="Shanghai">15+ days</option>                
-                    </select>
-                </div>
-                <div class="col-sm-3 push-3 journeyFinder">
-                    <select class="selectpicker" title="Budget">
-                        <option value="Beijing">Any</option>
-                        <option value="Beijing">0- $799</option>
-                        <option value="Shanghai">$750-$1499</option> 
-                        <option value="Shanghai">$1500-$2999</option>
-                        <option value="Shanghai">$3000+</option>                 
-                    </select>
-                </div>
+                <fieldset>
+                    <p>
+                        <ul>
+                            <li id="contactInfo" href="mailto: lindain711@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email : lindain711@hotmail.com </li>
+                            <li id="contactInfo"><i class="fa fa-phone" aria-hidden="true"></i> Phone number: (86)0887 8223453</li><br>
+                            <li id="contactInfo"><i class="fa fa-fax" aria-hidden="true"></i> Fax:(86)0887 8223454</li><br>
+                            <li id="contactInfo"><i class="fa fa-location-arrow" aria-hidden="true"></i> Address : 31#, Chi Ci a Road, Shanger-la city, Di Qing, Yun Nan, China</li><br>
+                        </ul>
+                    </p>
 
-                
-                <div class="col-sm-2">
-                    <button class="btn btn-primary" type="submit"><b>Search for a journey</b></button>
-                </div>
-            </section>
+                    
+                </fieldset>
+            </form>
+            <!--   </div> -->
+        </div>
 
+        <div class="container">
+            <form class="well form" role="form">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h3>Contact Form</h3>
+                    </div>
+                </div>
+                <!--   <div class="contactForm"> -->
+                <!-- <form class="well form contactForm" role="form"> --> 
+                <fieldset>
+                    <!-- <form role="form"> -->
+
+                    <div class="form-group col-sm-4 col-sm-offset-2">
+                        <label for="Name" class="h4"> Name </label>
+                        <input type="text"  class ="form-control" id="name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="Emal" class="h4"> Email </label>
+                        <input type="text"  class ="form-control" id="email" placeholder="frequent used email" required>
+                    </div>
+                    <div class="form-group col-sm-4 col-sm-offset-2">
+                        <label for="phone" class="h4"> Phone </label>
+                        <input type="text"  class ="form-control" id="phone" placeholder="phone number" required>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="Emal" class="h4"> Request type </label>
+                        <input type="text"  class ="form-control" id="email" placeholder="frequent used email" required>
+                    </div>
+
+                    <div class="form-group col-sm-8 col-sm-offset-2">
+                        <label for ="message" class ="h4"> Message</label>
+                        <textarea class ="form-control" id="message" rows="4" placeholder="Let us know..." required></textarea>
+                    </div>
+
+                    <div class="form-group col-sm-3 col-sm-offset-6">
+                        <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+
+                </fieldset>
+            </form>
+            <!--   </div> -->
         </div>
 
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
 
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="row">
-                        <div>
-                            <img src="image/4.jpeg" alt="Responsive image">
-                            <div class="carousel-caption">
-                                <h3>GET $100 OFF IF YOU BOOK NOW!</h3>
-                                <div>
-                                    <button class="btn btn-lg moreInfo-btn" type="submit">More Information</button> 
-                                </div> 
-                            </div>
-                        </div> 
-                    </div>
-                </div>
 
-                <div class="item">
-                    <div class="row">
-                        <div>
-                            <img src="image/2.jpg" alt="Responsive image" >
-                            <div class="carousel-caption">
-                                <h3>GET $100 OFF IF YOU BOOK NOW!</h3>
-                                <div>
-                                    <button class="btn btn-lg moreInfo-btn" type="submit">More Information</button> 
-                                </div> 
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div>
-                            <img src="image/3.jpg" alt="xxx" >
-                            <div class="carousel-caption">
-                                <h3>GET $100 OFF IF YOU BOOK NOW!</h3>
-                                <div>
-                                    <button class="btn btn-lg moreInfo-btn" type="submit">More Information</button> 
-                                </div> 
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control left" href="#myCarousel" data-slide ="prev"><span class="icon-prev"></span></a>
-            <a class="carousel-control right" href="#myCarousel" data-slide ="next"><span class="icon-next"></span></a>
-        </div>  
 
         <footer>
             <div class="panel panel-footer text-center">
@@ -203,5 +185,5 @@
         </footer>
     </body>
     <!--footer-->   
-    
+
     </html>

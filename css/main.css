@@ -1,5 +1,7 @@
 /*Navigation bar*/
-
+h1,h2,h3,h4,h5{
+	text-align: center;
+}
 
 li{	
 	display: inline;
@@ -104,10 +106,35 @@ li{
 
 }
 
-
-******************************************************
+****
+**************************************************
 /*what we offer - routes and treks list page*/
 
 
+**************************************************
+/* Contact Us page */
 
+.contactForm{
 
+	border:solid 1px;
+	color: black;
+}
+
+.btn{
+	margin-left:auto;
+	margin-right: auto;
+	display: block;
+}
+
+#contactInfo{
+	color: black;
+	font-size: 16px;
+	text-align: left;
+}
+
+.well{
+	background-image: #777;
+
+	background-color:#080808;
+	border:solid 2px;
+}
