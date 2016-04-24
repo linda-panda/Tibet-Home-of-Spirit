@@ -9,16 +9,12 @@ li{
 	padding-right: 25px;
 }
 
-
 /*Navigation bar styling*/
 .navbar-inverse{
 	border-radius: 0 !important;
-	-moz-border-radius: 0 !important;
-
 }
 
 .navbar-header{
-
 	height:50px;
 }
 
@@ -27,50 +23,54 @@ li{
 }
 
 .navbar-brand>img {
-	max-height: 70px%;
+	max-height: 70px;
 	height: 70px;
 	width: auto;
 	margin: 0 auto;
-	/* probably not needed anymore, but doesn't hurt */
-	-o-object-fit: contain;
 	object-fit: contain; 
-
 }
 
 .nav-font{
 	font-size: 16px;
-
 }
 
-
-
 #find-a-journey{
-	padding: 12px 0px 12px 0px;
-	margin: 0 auto;
-	width: 78% !important;
-	height:60px;
+	padding: 20px 20px 20px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height:75px;
 	border-radius: 5px;
-	box-shadow: 0px 5px 8px #080808;
+	box-shadow: 0 5px 8px #080808;
 	border-color: #333;
-	border-style: shadow;
 	background-color: #8C0000; 
 	margin-bottom: 20px;
+}
+
+#searchBar{
+	width: 100%;
 }
 
 .journeyFinder{
 	display: inline;
 }
 
+#findFont{
+	color: #8C0000;
+	font:bold;
+	font-size: 16px;
+	font-family:Merriweather;
+	font-style: italic;
+}
 /*update the inline size of options   */
 .dropdown-menu{
 	line-height: 1em;
 }
 
 /*carousel*/
-
 .carousel-caption {	
 	position: center;
-	top:40px;	
+	bottom:40px;	
 	text-align:center;
 }
 
@@ -80,12 +80,12 @@ li{
 
 /* More information button on home page styling*/
 .moreInfo-btn{
-	background: #8C0000;
-	opacity: 0.70;
+	background: #333;
+	opacity: 0.80;
 	border-radius: 5px;
 	width: 200px;
 	height:60px;
-	padding-top: 50px
+	padding-top: 50px;
 	border: 1px solid #fff;
 	text-align: center;
 	text-decoration: none;
@@ -97,23 +97,12 @@ li{
 	color: #000;
 }
 
-
-
-
 /*footer stlying*/
 .panel-footer{
 	font-size: 14px;
-
 }
 
-****
-**************************************************
-/*what we offer - routes and treks list page*/
-
-
-**************************************************
 /* Contact Us page */
-
 .contactForm{
 
 	border:solid 1px;
@@ -126,15 +115,59 @@ li{
 	display: block;
 }
 
-#contactInfo{
-	color: black;
+.submitBtn{
+	width: 35px;
+	height:18px;
+	text-align: center;
+	margin: auto;
+	color: white ;
+	font-size: 14px;
+}
+
+input[type=submit] {
+	padding:5px 15px; 
+	background:#8C0000; 
+	border:solid 1px;
+	cursor:pointer;
+	border-radius: 5px; 
+}
+
+.contactInfo{
+	display: block;
+	color: white;
 	font-size: 16px;
 	text-align: left;
 }
 
-.well{
-	background-image: #777;
+/* Thubmnail Display of team members and trips */
+.thumbnail{
+	margin-top: 30px;
+} 
 
-	background-color:#080808;
-	border:solid 2px;
+#contactFormBlack{
+	color:white;
+	border:solid 1px;
+	background:#333;
+	margin-bottom: 10px;
 }
+
+#contactFormRed{
+	color:white;
+	border:solid 1px;
+	background:#8C0000;	
+}
+
+#usefulTips1,#usefulTips2{
+	color:white;
+	border:solid 1px;
+	background:#333;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+

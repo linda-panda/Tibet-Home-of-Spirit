@@ -1,124 +1,136 @@
     <!DOCTYPE html>
-    <html>
     <head>
-    	<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    	<title>Home Page</title>
-    	<!-- compiled and minified CSS -->  
-    	<link rel="stylesheet" type="text/css" href="css/main.css">
-    	<!-- Latest compiled and minified CSS -->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- CSS -->  
+        <link rel="stylesheet" type="text/css" href="css/main.css">       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
 
-    	<!-- Optional theme -->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <!-- javascript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+        <script src="js/main.js"></script>
 
-    	<!--Font Awesome-->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-    	<!-- Latest compiled and minified JavaScript -->
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    	<!-- Include all compiled plugins (below), or include individual files as needed -->
-    	<script src="js/bootstrap.min.js"></script>
-    	<script src="js/main.js"></script>
-    	<!-- Latest compiled and minified CSS  from https://silviomoreto.github.io/bootstrap-select/-->
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
-
-    	<!-- Latest compiled and minified JavaScript from https://silviomoreto.github.io/bootstrap-select/-->
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
-
-    	<!-- (Optional) Latest compiled and minified JavaScript translation files from https://silviomoreto.github.io/bootstrap-select/-->
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
-
+        <title>Home Page</title>
 
     </head>        
-
-
     <body>
-    	<nav class="navbar navbar-inverse" role="navigation">
-    		<div class="container-fluid">
-    			<!--logo-->
-    			<div class="navbar-header">
-    				<a class="navbar-brand pull-left" href="http://www.wildchina.com/education-tours"><img src="image/logo.png" alt="Tibet Travel"></a>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!--logo-->
+                <div class="navbar-header">
+                    <a class="navbar-brand pull-left" href="http://www.wildchina.com/education-tours"><img src="image/logo.png" alt="Tibet Travel"></a>                    
+                </div>
 
-    			</div>
+                <!--Main Navigation Bar-->
+                <ul class="nav navbar-nav">
+                    <li class="nav-font"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-tripadvisor" aria-hidden="true"></i> What we offer<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="one-day-treks.html">One day Treks</a></li>
+                            <li><a href="">Long Treks</a></li>
+                            <li><a href="">Route 3</a></li>
+                            <li><a href="">Route 4</a></li>
+                        </ul>                      
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="our-team.html">Our Team</a></li>
+                            <li><a href="">Our Story</a></li>
+                            <li><a href="">Our Commitment</a></li>
+                            <li><a href="">Our Mission</a></li>
+                        </ul>                      
+                    </li>
+                    <li class="nav-font"><a href="useful-tips.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Useful Tips</a>
+                    </li>
+                    <li class="nav-font"><a href="contact-us.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Us</a>
+                    </li>
+                </ul>
+                <div> class="nav navbar-nav navbar-right">
+                    <div class="btn-group">
+                        <a class="btn btn-default" href="#"><i class="fa fa-user fa-fw"></i> My Account</a>
+                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Login</a></li>
+                            <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>                              
+            </div>
+        </nav>
+        <div class="container">
+            <form  id="contactFormBlack" class="well form">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <h3>Time Difference</h3><hr>
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>                         
+                        </div>
+                        <div class="col-sm-9">               
+                            <div id="timeDiff"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <form  id="usefulTips1" class="well form">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <h3>Prevention of Altitude Sickness (AMS)</h3><hr>
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <i class="fa fa-ambulance fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-sm-9">
+                            To prevent the occurrence of altitude sickness, visitors should have a proper rest and avoid strenuous activities days before you get into Tibet. After getting off the plane, you should try not to carry heavy things or run and avoid outdoor activities.
+                            Nifedipinum, Nuodikang Capsule and Suoluomabao Capsule (also known as Hongjingtian Capsule) may help some people prevent the occurrence of altitude sickness when they are taken three days before arrive in a highland.                     
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <form  id="usefulTips2" class="well form">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <h3>Physical Preparation</h3><hr>
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <i class="fa fa-child fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-sm-9">
+                            Being physically prepared for your travel to Tibet is essential. We recommend you begin a regular exercise program well in advance of your trip, especially if you live at a low elevation. Include some day hikes in your regimen, working up to the maximum suggested number of hours for your intended trek. Wear the gear that you plan to take on your trip, so you know you will be comfortable in it. In particular, break in any new equipment (boots and pack, for example) before you go. Even if you do not plan to go on extended treks, regular exercise will help protect you from altitude sickness.
+                            If you are planning to take more challenging treks, you should have a high level of physical fitness.                        
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-    			<!--Menu-->
-    			<ul class="nav navbar-nav">
-    				<li class="nav-font"><a href="index.html"><span class="glyphicon glyphicon-home" aria="true"></span> Home</a></li>
-    				<li class="dropdown">
-    					<a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-tripadvisor" aria-hidden="true"></i> What we offer<span class="caret"></span></a>
-    					<ul class="dropdown-menu">
-    						<li><a href="one-day-treks.html">One day Treks</a></li>
-    						<li><a href="">Long Treks</a></li>
-    						<li><a href="">Route 3</a></li>
-    						<li><a href="">Route 4</a></li>
-    					</ul>                      
-    				</li>
-    				<li class="dropdown">
-    					<a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> About Us<span class="caret"></span></a>
-    					<ul class="dropdown-menu">
-    						<li><a href="">Our Team</a></li>
-    						<li><a href="">Our Story</a></li>
-    						<li><a href="">Our Commitment</a></li>
-    						<li><a href="">Our Mission</a></li>
-    					</ul>                      
-    				</li>
 
-    				<li class="dropdown">
-    					<a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Useful Tips<span class="caret"></span></a>
-    					<ul class="dropdown-menu">
-    						<li><a href="">Time difference</a></li>
-    						<li><a href="">Weather Tips</a></li>
+        <footer>
+          <div class="panel panel-footer text-center">
+             <ul>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Contact</a></li>   
+                 <li><a href="#">Terms and Conditions</a></li>   
+                 <li><a href="#">Privacy Policy</a></li>   
+             </ul>
+         </div>
+     </footer>
+ </body>
+ <!--footer-->   
 
-    					</ul>                      
-    				</li>
-    				<li class="nav-font"><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Us</a>
-    				</li>
-
-    			</ul>
-    			<ul class="nav navbar-nav navbar-right">
-    				<div class="btn-group">
-    					<a class="btn btn-default" href="#"><i class="fa fa-user fa-fw"></i> My Account</a>
-    					<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
-    						<span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
-    					</a>
-    					<ul class="dropdown-menu">
-    						<li><a href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Login</a></li>
-    						<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a></li>
-    					</ul>
-    				</div>
-
-
-    			</ul>                              
-    		</div>
-    	</nav>
-
-
-    	<h2>Time Difference</h2><hr>
-    	<div class="contanier">
-    		<div id="timeDiff">
-    			
-    		</div>
-    	</div>
-
-
-    	<footer>
-    		<div class="panel panel-footer text-center">
-    			<ul>
-    				<li><a href="#>About Us</a></li>
-    				<li><a href="#>Contact</a></li>   
-    				<li><a href="#">Terms and Conditions</a></li>   
-    				<li><a href="#">Privacy Policy</a></li>   
-    			</ul>
-    		</div>
-    	</footer>
-    </body>
-    <!--footer-->   
-    
-    </html>
+ </html>

@@ -1,59 +1,39 @@
     <!DOCTYPE html>
-    <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- compiled and minified CSS -->  
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-        <!-- Optional theme -->
+        <!-- CSS -->  
+        <link rel="stylesheet" type="text/css" href="css/main.css">       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-
-        <!--Font Awesome-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-
-
-
-        <!-- Latest compiled and minified CSS  from https://silviomoreto.github.io/bootstrap-select/-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
 
-        <!-- Latest compiled and minified JavaScript from https://silviomoreto.github.io/bootstrap-select/-->
+        <!-- javascript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>      
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
-
-        <!-- (Optional) Latest compiled and minified JavaScript translation files from https://silviomoreto.github.io/bootstrap-select/-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+        <script src="js/main.js"></script>
 
         <title>Home Page</title>
 
     </head>        
-
-
     <body>
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <!--logo-->
                 <div class="navbar-header">
-                    <a class="navbar-brand pull-left" href="http://www.wildchina.com/education-tours"><img src="image/logo.png" alt="Tibet Travel"></a>
-                    
+                    <a class="navbar-brand pull-left" href="http://www.wildchina.com/education-tours"><img src="image/logo.png" alt="Tibet Travel"></a>                    
                 </div>
 
-                <!--Menu-->
+                <!--Main Navigation Bar-->
                 <ul class="nav navbar-nav">
-                    <li class="nav-font"><a href="index.html"><span class="glyphicon glyphicon-home" aria="true"></span> Home</a></li>
+                    <li class="nav-font"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-tripadvisor" aria-hidden="true"></i> What we offer<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -72,20 +52,12 @@
                             <li><a href="">Our Mission</a></li>
                         </ul>                      
                     </li>
-
-                    <li class="dropdown">
-                        <a href="useful-tips" class="dropdown-toggle nav-font" data-toggle="dropdown"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Useful Tips<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="useful-tips.html">Time difference</a></li>
-                            <li><a href="">Weather Tips</a></li>
-
-                        </ul>                      
+                    <li class="nav-font"><a href="useful-tips.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Useful Tips</a>
                     </li>
                     <li class="nav-font"><a href="contact-us.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Us</a>
                     </li>
-
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <div>class="nav navbar-nav navbar-right">
                     <div class="btn-group">
                         <a class="btn btn-default" href="#"><i class="fa fa-user fa-fw"></i> My Account</a>
                         <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
@@ -96,88 +68,80 @@
                             <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a></li>
                         </ul>
                     </div>
-
-
-                </ul>                              
+                </div>                              
             </div>
         </nav>
-
-
         <div class="container">
-            <form class="well form" role="form">
+            <form  id="contactFormRed" class="well form">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <h3>Find Us here</h3>
+                    <div class="col-sm-12 ">
+                        <h3>Find Us here</h3><hr>
+                        <div class="col-sm-6">
+                            <img src="image/logo.png" alt="Logo Picture">
+                        </div>
+                        <div class="col-sm-6 ">
+                            <ul>
+                                <li class="contactInfo"><i class="fa fa-envelope" aria-hidden="true"></i> Email : XXXXXX@wildtibet.com </li>
+                                <li class="contactInfo"><i class="fa fa-phone" aria-hidden="true"></i>  Phone number: (86)0887 8223453</li>
+                                <li class="contactInfo"><i class="fa fa-fax" aria-hidden="true"></i> Fax:(86)0887 8223454</li>
+                                <li class="contactInfo"><i class="fa fa-location-arrow" aria-hidden="true"></i>  Address : 31#, Chi Ci Ka Road, Shangri-la city, Di Qing, Yun Nan, China</li>
+                                <li>
+                                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>     
+                                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>    
+                                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-weixin fa-2x" aria-hidden="true"></i>
+                                </li>
+                            </ul>                           
+                        </div>
                     </div>
                 </div>
-                <fieldset>
-                    <p>
-                        <ul>
-                            <li id="contactInfo" href="mailto: lindain711@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email : lindain711@hotmail.com </li>
-                            <li id="contactInfo"><i class="fa fa-phone" aria-hidden="true"></i> Phone number: (86)0887 8223453</li><br>
-                            <li id="contactInfo"><i class="fa fa-fax" aria-hidden="true"></i> Fax:(86)0887 8223454</li><br>
-                            <li id="contactInfo"><i class="fa fa-location-arrow" aria-hidden="true"></i> Address : 31#, Chi Ci a Road, Shanger-la city, Di Qing, Yun Nan, China</li><br>
-                        </ul>
-                    </p>
-
-                    
-                </fieldset>
             </form>
             <!--   </div> -->
         </div>
-
         <div class="container">
-            <form class="well form" role="form">
+            <form id="contactFormBlack" action="#" name="myForm" onsubmit="return(validateForm())" method="POST" class="well form">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3">
-                        <h3>Contact Form</h3>
+                        <h3>Contact Form</h3><hr>
                     </div>
                 </div>
-                <!--   <div class="contactForm"> -->
-                <!-- <form class="well form contactForm" role="form"> --> 
-                <fieldset>
-                    <!-- <form role="form"> -->
-
+                <fieldset>                
                     <div class="form-group col-sm-4 col-sm-offset-2">
-                        <label for="Name" class="h4"> Name </label>
-                        <input type="text"  class ="form-control" id="name" placeholder="Enter Name" required>
+                        <label for="name"> Name </label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label for="Emal" class="h4"> Email </label>
-                        <input type="text"  class ="form-control" id="email" placeholder="frequent used email" required>
+                        <label for="email"> Email </label>
+                        <input type="text" name="email" class="form-control" id="email" placeholder="frequent used email" required>
+                        <div id="emailError"></div>
                     </div>
                     <div class="form-group col-sm-4 col-sm-offset-2">
-                        <label for="phone" class="h4"> Phone </label>
-                        <input type="text"  class ="form-control" id="phone" placeholder="phone number" required>
+                        <label for="phone"> Phone </label>
+                        <input type="text" class ="form-control" id="phone" placeholder="phone number" required>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label for="Emal" class="h4"> Request type </label>
-                        <input type="text"  class ="form-control" id="email" placeholder="frequent used email" required>
+                        <label for="request"> Request type </label>
+                        <input type="text" class ="form-control" id="request" placeholder="frequent used email" required>
                     </div>
 
                     <div class="form-group col-sm-8 col-sm-offset-2">
-                        <label for ="message" class ="h4"> Message</label>
-                        <textarea class ="form-control" id="message" rows="4" placeholder="Let us know..." required></textarea>
+                        <label for ="message"> Message</label>
+                        <textarea class ="form-control" id="message" rows="5" placeholder="Let us know..." required></textarea>
                     </div>
 
-                    <div class="form-group col-sm-3 col-sm-offset-6">
-                        <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+                    <div class="form-group col-sm-12 submitBtn">
+                        <input type="submit" name="Send" value="Send"/><span class="glyphicon glyphicon-send"></span>
                     </div>
 
                 </fieldset>
             </form>
             <!--   </div> -->
         </div>
-
-
-
-
-
         <footer>
             <div class="panel panel-footer text-center">
                 <ul>
-                    <li><a href="#>About Us</a></li>
-                    <li><a href="#>Contact</a></li>   
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>   
                     <li><a href="#">Terms and Conditions</a></li>   
                     <li><a href="#">Privacy Policy</a></li>   
                 </ul>
